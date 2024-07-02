@@ -2,28 +2,28 @@
 const cats = ['Milo', 'Otis', 'Garfield']
 
 function destructivelyAppendCat(name){
-    cats.push('Ralph')
+    cats.push(name)
 }
 
 function destructivelyPrependCat(name){
-    cats.unshift('Bob')
+    cats.unshift(name)
 }
 
-function destructivelyRemoveLastCat(name){
+function destructivelyRemoveLastCat(){
     cats.pop()
 }
 
-function destructivelyRemoveFirstCat(name){
+function destructivelyRemoveFirstCat(){
     cats.shift()
 }
 
 function appendCat(name){
-   let newCats = [...cats, 'Broom']
+   let newCats = [...cats, name]
    return newCats
 }
 
 function prependCat(name){
-    let newCats = ['Arnold',...cats]
+    let newCats = [name,...cats]
     return newCats
 }
 
